@@ -1,0 +1,103 @@
+
+  main {
+    margin-left: 200px;
+    padding: 40px;
+    width: 100%;
+  }
+  
+  .integrantes {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+  }
+  
+  .cartao-integrante {
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+    display: none;
+    background-color: #ffffe0;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    max-width: 900px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+
+.cartao-integrante:hover{
+    transform: scale(1.03);
+    box-shadow: boder-box;
+    }
+  
+  .cartao-integrante.ativo {
+    display: block;
+  }
+  
+  .cartao-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .cartao-imagem img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .detalhes {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: right;
+  }
+  
+  .nome {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .rm {
+    font-size: 22px;
+    color: #555;
+  }
+
+  .links-social{
+    margin-top: 12px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+  }
+
+.links-sociais img{
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3;
+}
+
+.links-sociais img:hover{
+    transform: scale(1.1);
+}
+  
+  button#btn-proximo {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button#btn-proximo:hover {
+    background-color: #0055aa;
+  }
