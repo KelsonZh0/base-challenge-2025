@@ -19,19 +19,19 @@ main {
 .cartao-integrante {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: none;
-  background-color: #ffffe0;
+  background-color: #FFD8A8;
   border-radius: 10px;
   overflow: hidden;
   padding: 20px;
   max-width: 900px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(255, 112, 67, 0.25); /* sombra com tom laranja suave */
   box-sizing: border-box;
   animation: fade 0.5s ease-in-out;
 }
 
 .cartao-integrante:hover {
   transform: scale(1.03);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 16px rgba(255, 112, 67, 0.35); /* sombra mais destacada no hover */
 }
 
 .cartao-integrante.ativo {
@@ -68,11 +68,12 @@ main {
   font-size: 36px;
   font-weight: bold;
   margin: 0;
+  color: #E63946; /* vermelho vibrante */
 }
 
 .rm {
   font-size: 22px;
-  color: #555;
+  color: #E63946;
 }
 
 .links-sociais {
@@ -93,12 +94,17 @@ main {
   transform: scale(1.1);
 }
 
+.sobre {
+  color: #333333; /* cinza escuro para contraste com o fundo claro */
+  font-size: 18px;
+}
+
 button#btn-proximo {
   display: block;
   margin: 20px auto 0;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #003366;
+  background-color: #F77F00; /* laranja médio do logo */
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -107,5 +113,5 @@ button#btn-proximo {
 }
 
 button#btn-proximo:hover {
-  background-color: #0055aa;
+  background-color: #E76F00; /* tom mais escuro no hover */
 }

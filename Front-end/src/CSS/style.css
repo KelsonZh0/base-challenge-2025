@@ -2,13 +2,14 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     display: flex;
+    background: linear-gradient(180deg, #FDFBFA, #F7F0ED);
   }
   
   header {
     position: fixed;
     height: 100vh;
     width: 198px;
-    background-color: #f0f0f0;
+    background: linear-gradient(180deg, #F77F00, #FFB347);
     padding-top: 40px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   }
@@ -28,8 +29,17 @@ body {
     gap: 20px;
   }
   
-  .nav-bar ul li a {
-    text-decoration: none;
-    color: #333;
+  nav ul li a {
+    color: #FFFFFF;
     font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
   }
+  
+  nav ul li a:hover {
+    transform: scale(3); /* aumenta 2x */
+    color: #FFF1CC;      /* tom mais claro como destaque */
+  }
+  
