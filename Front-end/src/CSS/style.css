@@ -1,45 +1,49 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    background: linear-gradient(180deg, #FDFBFA, #F7F0ED);
-  }
-  
-  header {
-    position: fixed;
-    height: 100vh;
-    width: 198px;
-    background: linear-gradient(180deg, #F77F00, #FFB347);
-    padding-top: 40px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  header h1 {
-    text-align: center;
-    font-size: 18px;
-    margin-bottom: 30px;
-  }
-  
-  .nav-bar ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
-  
-  nav ul li a {
-    color: #FFFFFF;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 16px;
-    transition: transform 0.3s ease, color 0.3s ease;
-    display: inline-block;
-  }
-  
-  nav ul li a:hover {
-    transform: scale(3); /* aumenta 2x */
-    color: #FFF1CC;      /* tom mais claro como destaque */
-  }
-  
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  background-color: #F0F0F0; /* cinza claro e moderno */
+}
+
+header {
+  position: fixed;
+  height: 100vh;
+  width: 290px; /* Aumenta o espaço lateral */
+  background: linear-gradient(180deg, #F77F00, #FFB347);
+  padding-top: 40px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 2; /* Garante que fique na frente */
+}
+
+header h1 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.nav-bar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  padding-left: 30px;
+}
+
+nav ul li a {
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  transform-origin: left; /* Expande para a direita */
+  z-index: 3; /* Garante que fique acima */
+  position: relative; /* Necessário para z-index funcionar */
+}
+
+nav ul li a:hover {
+  transform: scale(3);
+  color: #FFF1CC;
+}
