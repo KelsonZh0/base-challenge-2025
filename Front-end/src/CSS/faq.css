@@ -1,0 +1,85 @@
+main {
+  margin-left: 200px;
+  padding: 40px;
+  width: 100%;
+}
+
+/* Título e subtítulo com estilo padronizado */
+.faq-title {
+  color: #E63946; /* vermelho vibrante dos nomes */
+  font-size: 35px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.faq-subtitle {
+  font-size: 20px;
+  color: #333333;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Estilo do container herdando do cartao-integrante */
+.container {
+  background-color: #FFD8A8; /* fundo do cartão */
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 40px auto;
+  box-shadow: 0 2px 6px rgba(255, 112, 67, 0.25);
+  box-sizing: border-box;
+}
+
+/* Sessão da FAQ */
+.faq-section {
+  margin-top: 30px;
+}
+
+/* Cada pergunta */
+.faq {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #F77F00; /* mesmo laranja do botão */
+  background-color: #FFF3E0;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito de crescimento ao passar o mouse */
+.faq:hover {
+  transform: scale(1.06);
+  box-shadow: 0 6px 16px rgba(255, 112, 67, 0.35);
+}
+
+/* Cabeçalho clicável */
+.faq h3 {
+  padding: 12px 16px;
+  margin: 0;
+  font-size: 24px;
+  background-color: #FFE0B2;
+  cursor: pointer;
+  color: #BF360C;
+  font-weight: bold;
+  transition: font-size 0.3s ease;
+}
+
+.faq h3:hover {
+  background-color: #FFCC80;
+  font-size: 22px; /* crescimento perceptível */
+}
+
+/* Conteúdo escondido inicialmente */
+.faq p {
+  display: none;
+  padding: 12px 16px;
+  margin: 0;
+  background-color: #FFF8E1;
+  color: #333;
+  border-top: 1px solid #F77F00;
+  font-size: 20px;
+}
+
+/* Mostrar resposta ao abrir */
+.faq.active p {
+  display: block;
+}

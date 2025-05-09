@@ -96,8 +96,18 @@ main {
 
 .sobre {
   color: #333333; /* cinza escuro para contraste com o fundo claro */
-  font-size: 18px;
+  font-size: 20px;
+  margin-top: 15px;
 }
+
+.sobre h3{
+  margin-bottom: 10px;
+}
+
+.sobre p {
+    line-height: 1.5;
+}
+
 
 button#btn-proximo {
   display: block;
