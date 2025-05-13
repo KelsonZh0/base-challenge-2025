@@ -2,14 +2,14 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   display: flex;
-  background-color: #F0F0F0; /* cinza claro e moderno */
+  background-color: #f4faff; /* cinza claro e moderno */
 }
 
 header {
   position: fixed;
   height: 100vh;
   width: 290px; /* Aumenta o espaço lateral */
-  background: linear-gradient(180deg, #F77F00, #FFB347);
+  background: linear-gradient(180deg, #0054a6, #dcefff);
   padding-top: 40px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   z-index: 2; /* Garante que fique na frente */
@@ -45,5 +45,5 @@ nav ul li a {
 
 nav ul li a:hover {
   transform: scale(3);
-  color: #FFF1CC;
+  color: #dcefff;
 }

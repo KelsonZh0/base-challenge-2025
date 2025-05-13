@@ -1,0 +1,87 @@
+@media (max-width: 600px) {
+
+    header {
+        width: 100px;
+        height: 100vh;
+        position: fixed;
+        text-align: center;
+        padding: 20px 10px;
+        /* espaço interno */
+        box-sizing: border-box;
+    }
+
+    header h1 {
+        font-size: 14px;
+        /* tamanho menor no mobile */
+        transform: none !important;
+        /* remove qualquer scale aplicado */
+        white-space: nowrap;
+        /* impede quebra de linha */
+        overflow: hidden;
+        /* impede que ultrapasse */
+        text-overflow: ellipsis;
+        /* adiciona "..." se necessário */
+    }
+
+    .nav-bar ul {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0;
+        margin: 0;
+        gap: 16px;
+    }
+
+    .nav-bar ul li a {
+        display: block;
+        padding: 0 8px;
+        /* espaço nas laterais dos links */
+        font-size: 12px;
+        transform: scale(1.2);
+        /* reduz escala para não estourar */
+        white-space: nowrap;
+    }
+
+    main {
+        margin-left: 100px;
+        padding: 16px;
+        max-width: calc(100vw - 100px);
+        /* evita que o conteúdo ultrapasse a tela */
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+
+    .container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .faq-title {
+        font-size: 24px;
+    }
+
+    .faq-subtitle {
+        font-size: 16px;
+    }
+
+    .faq h3 {
+        font-size: 18px;
+    }
+
+    .faq h3:hover {
+        font-size: 19px;
+    }
+
+    .faq p {
+        font-size: 16px;
+    }
+
+    .faq:hover {
+        transform: scale(1.01);
+    }
+
+    .faq:hover {
+        box-shadow: 0 3px 10px rgba(0, 84, 166, 0.15);
+    }
+
+}
