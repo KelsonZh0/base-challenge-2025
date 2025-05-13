@@ -2,14 +2,14 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   display: flex;
-  background-color: #f4faff; /* cinza claro e moderno */
+  background-color: #FFEFD8
 }
 
 header {
   position: fixed;
   height: 100vh;
   width: 290px; /* Aumenta o espaço lateral */
-  background: linear-gradient(180deg, #0054a6, #dcefff);
+  background: linear-gradient(180deg, #F7941D, #FFCC80);
   padding-top: 40px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   z-index: 2; /* Garante que fique na frente */
@@ -32,7 +32,7 @@ header h1 {
 }
 
 nav ul li a {
-  color: #FFFFFF;
+  color: #000000;
   font-weight: bold;
   text-decoration: none;
   font-size: 16px;
@@ -45,5 +45,5 @@ nav ul li a {
 
 nav ul li a:hover {
   transform: scale(3);
-  color: #dcefff;
+  color: #000;
 }

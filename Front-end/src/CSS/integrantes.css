@@ -18,7 +18,7 @@ main {
 .cartao-integrante {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: none;
-  background-color: #ffffff;
+  background-color: 	#FDE6C6;
   border-radius: 10px;
   overflow: hidden;
   padding: 40px;
@@ -67,12 +67,12 @@ main {
   font-size: 36px;
   font-weight: bold;
   margin: 0;
-  color: #0054a6;
+  color: 	#A84421;
 }
 
 .rm {
   font-size: 22px;
-  color: #0054a6;
+  color: 	#9F5C32;
 }
 
 .links-sociais {
@@ -94,14 +94,14 @@ main {
 }
 
 .sobre {
-  color: #333; /* cinza escuro para contraste com o fundo claro */
+  color: 	#2B1D1A;
   font-size: 20px;
   margin-top: 15px;
 }
 
 .sobre h3{
   margin-bottom: 10px;
-  color:#002244;
+  color:	#2B1D1A;
 }
 
 .sobre p {
@@ -114,8 +114,8 @@ button#btn-proximo {
   margin: 20px auto 0;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #dcefff;
-  color: #003366;
+  background-color: #F77F00;
+  color: #fff;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -123,5 +123,5 @@ button#btn-proximo {
 }
 
 button#btn-proximo:hover {
-  background-color: #cce0f5
+  background-color: #E76F00
 }
