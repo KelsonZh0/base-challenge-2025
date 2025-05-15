@@ -15,18 +15,39 @@ header {
   z-index: 2; /* Garante que fique na frente */
 }
 
-header h1 {
-  text-align: center;
-  font-size: 18px;
-  margin-bottom: 30px;
+.profile {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #000;
+    padding: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.profile h2 {
+    font-size: 18px;
+    color: #000;
+    margin: 0;
+}
+
+.profile p {
+    font-size: 18px;
+    color: #000;
+    margin: 0;
+    margin-top: 20px;
 }
 
 .nav-bar ul {
   list-style: none;
-  padding: 0;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 30px;
   padding-left: 30px;
 }
@@ -35,15 +56,15 @@ nav ul li a {
   color: #000000;
   font-weight: bold;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 25px;
   transition: transform 0.3s ease, color 0.3s ease;
   display: inline-block;
-  transform-origin: left; /* Expande para a direita */
+  transform-origin: center; /* Expande para a direita */
   z-index: 3; /* Garante que fique acima */
   position: relative; /* Necessário para z-index funcionar */
 }
 
 nav ul li a:hover {
-  transform: scale(3);
+  transform: scale(1.7);
   color: #000;
 }
