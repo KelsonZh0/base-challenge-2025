@@ -18,7 +18,7 @@ main {
 .cartao-integrante {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: none;
-  background-color: 	#FDE6C6;
+  background-color:#FDE6C6;
   border-radius: 10px;
   overflow: hidden;
   padding: 40px;

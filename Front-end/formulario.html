@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atendimento</title>
+    <link rel="stylesheet" href="Front-end/src/CSS/reset.css">
+    <link rel="stylesheet" href="formualario.css">
+</head>
+
+<body>
+    <main class="container">
+        <h1>Formulário de Atendimento</h1>
+        <div class="alerta-obrigatorio">
+            <p>
+                Por favor, preencha todos os campos abaixo.
+                Os campos marcados com <strong>*</strong> são obrigatórios.
+            </p>
+        </div>
+
+        <form id="form-pre-atendimento">
+            <label for="nome">Nome completo: *</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="cpf">CPF: *</label>
+            <input type="text" id="cpf" name="cpf" required maxlength="14" placeholder="000.000.000-00">
+
+            <label for="data-nascimento">Data de nascimento: *</label>
+            <input type="date" id="data-nascimento" name="data-nascimento" required>
+
+            <label for="email">E-mail: *</label>
+            <input type="email" id="email" name="email" required placeholder="seuemail@email.com">
+
+            <label for="telefone">Telefone: *</label>
+            <input type="tel" id="telefone" name="telefone" required placeholder="(11) 91234-5678">
+
+            <label>Possui dificuldade ao mexer no celular ? *</label>
+            <div class="radio-group">
+                <input type="radio" id="celular-sim" name="dificuldade_celular" value="sim" required>
+                <label class="radio-option" for="celular-sim">Sim</label>
+
+                <input type="radio" id="celular-nao" name="dificuldade_celular" value="nao">
+                <label class="radio-option" for="celular-nao">Não</label>
+            </div>
+
+
+            <label>Possui dificuldade de leitura ? *</label>
+            <div class="radio-group">
+                <input type="radio" id="leitura-sim" name="dificuldade_leitura" value="sim" required>
+                <label class="radio-option" for="leitura-sim">Sim</label>
+
+                <input type="radio" id="leitura-nao" name="dificuldade_leitura" value="nao">
+                <label class="radio-option" for="leitura-nao">Não</label>
+            </div>
+
+            <label>Tem alguém próximo para te auxiliar ? *</label>
+            <div class="radio-group">
+                <input type="radio" id="auxilio-sim" name="tem_auxilio" value="sim" required>
+                <label class="radio-option" for="auxilio-sim">Sim</label>
+
+                <input type="radio" id="auxilio-nao" name="tem_auxilio" value="nao">
+                <label class="radio-option" for="auxilio-nao">Não</label>
+            </div>
+
+            <button type="submit"><a href="./index.html">ENVIAR</a></button>
+        </form>
+
+    </main>
+
+</body>
+
+</html>
