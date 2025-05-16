@@ -80,6 +80,12 @@ document.getElementById("form-pre-atendimento").addEventListener("submit", funct
   // Pega o nome digitado para mostrar depois na página de confirmação
   const nome = document.getElementById("nome").value;
 
+    if (!validarCPF(cpf)) {
+    alert("CPF inválido.");
+    e.preventDefault();
+    return;
+  }
+
   // Se os e-mails forem diferentes, mostra alerta e impede envio
   if (email !== confirmar) {
     alert("Os e-mails não coincidem.");
