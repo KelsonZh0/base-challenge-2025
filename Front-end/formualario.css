@@ -5,51 +5,63 @@ body {
     background-attachment: fixed;
     background-size: cover;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* altura igual à tela inteira */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* impede rolagem */
+
 }
 
 .container {
-    max-width: 600px;
-    background-color: #FDE6C6;
-    margin: 40px auto;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  max-width: 600px;
+  width: 90%;
+  background-color: #FDE6C6;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  overflow-y: auto; /* para permitir rolagem interna se necessário */
+  max-height: 95vh;
 }
 
 h1 {
     text-align: center;
+    margin-bottom: 16px;
     margin-bottom: 20px;
 }
 
 .alerta-obrigatorio {
-  background-color: #f780002a;
-  border-left: 5px solid #bf360c7b;
-  padding: 12px 16px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  font-size: 12px;
-  color: #333;
+    background-color: #f780002a;
+    border-left: 5px solid #bf360c7b;
+    padding: 10px 14px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #333;
 }
 
 
 form label {
     display: block;
-    margin: 12px 0 6px;
+    margin: 10px 0 4px;
 
 }
 
 form input {
     width: 100%;
-    padding: 10px;
+    padding: 8px;
     border-radius: 5px;
     border: 1px solid #ccc;
     background-color: #FFF8E1;
+    font-size: 14px;
 }
 
 
 button {
     background-color: #F77F00;
-    padding: 12px;
+    padding: 10px;
     border: none;
     border-radius: 6px;
     font-size: 16px;
@@ -58,7 +70,7 @@ button {
     width: 100%;
 }
 
-button a{
+button a {
     color: #fff;
     text-decoration: none;
 }
@@ -70,7 +82,8 @@ button:hover {
 /* Agrupamento dos radios */
 form .radio-group {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
     margin-bottom: 20px;
     align-items: center;
 }
@@ -84,10 +97,11 @@ form input[type="radio"] {
 form label.radio-option {
     border: 1px solid #ccc;
     border-radius: 6px;
-    padding: 8px 16px;
+    padding: 8px 12px;
     cursor: pointer;
     background-color: #FFF8E1;
     transition: all 0.2s ease-in-out;
+    font-size: 13px;
 }
 
 /* Cor quando marcado */

@@ -39,6 +39,25 @@
             <label for="telefone">Telefone: *</label>
             <input type="tel" id="telefone" name="telefone" required placeholder="(11) 91234-5678">
 
+            <label>Qual é a sua sexualidade? *</label>
+            <div class="radio-group">
+                <input type="radio" id="sexualidade-hetero" name="sexualidade" value="Heterossexualidade" required>
+                <label class="radio-option" for="sexualidade-hetero">Heterossexualidade</label>
+
+                <input type="radio" id="sexualidade-homo" name="sexualidade" value="Homossexualidade">
+                <label class="radio-option" for="sexualidade-homo">Homossexualidade</label>
+
+                <input type="radio" id="sexualidade-bi" name="sexualidade" value="Bissexualidade">
+                <label class="radio-option" for="sexualidade-bi">Bissexualidade</label>
+
+                <input type="radio" id="sexualidade-demi" name="sexualidade" value="Demissexualidade">
+                <label class="radio-option" for="sexualidade-demi">Demissexualidade</label>
+
+                <input type="radio" id="sexualidade-pan" name="sexualidade" value="Pansexualidade">
+                <label class="radio-option" for="sexualidade-pan">Pansexualidade</label>
+            </div>
+
+
             <label>Possui dificuldade ao mexer no celular ? *</label>
             <div class="radio-group">
                 <input type="radio" id="celular-sim" name="dificuldade_celular" value="sim" required>
@@ -71,7 +90,7 @@
         </form>
 
     </main>
-<script src="./src/java-script/formulario.js"></script>
+    <script src="./src/java-script/formulario.js"></script>
 </body>
 
 </html>
