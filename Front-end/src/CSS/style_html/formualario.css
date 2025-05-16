@@ -4,15 +4,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* altura igual à tela inteira */
-    margin: 0;
-    padding: 0;
-    overflow: hidden; /* impede rolagem */
-
+    min-height: 100vh;
+    
 }
 
 .container {
@@ -22,8 +15,7 @@ body {
   padding: 24px;
   border-radius: 10px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-  overflow-y: auto; /* para permitir rolagem interna se necessário */
-  max-height: 95vh;
+  margin: 40px auto; /* centraliza horizontalmente e cria espaço no topo */
 }
 
 h1 {
@@ -46,6 +38,7 @@ h1 {
 form label {
     display: block;
     margin: 10px 0 4px;
+    font-size: 18px;
 
 }
 
@@ -55,7 +48,7 @@ form input {
     border-radius: 5px;
     border: 1px solid #ccc;
     background-color: #FFF8E1;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 
@@ -64,15 +57,11 @@ button {
     padding: 10px;
     border: none;
     border-radius: 6px;
-    font-size: 16px;
+    font-size: 18px;
     cursor: pointer;
     margin-top: 15px;
     width: 100%;
-}
-
-button a {
     color: #fff;
-    text-decoration: none;
 }
 
 button:hover {
@@ -95,14 +84,19 @@ form input[type="radio"] {
 
 /* Estilo visual do botão customizado */
 form label.radio-option {
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    padding: 8px 12px;
-    cursor: pointer;
-    background-color: #FFF8E1;
-    transition: all 0.2s ease-in-out;
-    font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 12px 18px;  /* Aumentamos o tamanho */
+  cursor: pointer;
+  background-color: #FFF8E1;
+  transition: all 0.2s ease-in-out;
+  font-size: 18px;     /* Letra maior */
+  text-align: center;
+  max-width: 100%;     /* Nunca ultrapassa a largura da tela */
+  flex: 1 1 45%;       /* Ocupa 45% da linha no wrap */
+  box-sizing: border-box;
 }
+
 
 /* Cor quando marcado */
 form input[type="radio"]:checked+label.radio-option {

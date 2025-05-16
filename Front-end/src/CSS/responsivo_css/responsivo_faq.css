@@ -1,5 +1,4 @@
 @media (max-width: 600px) {
-
     header {
         width: 100px;
         height: 100vh;
@@ -10,35 +9,38 @@
         box-sizing: border-box;
     }
 
-    header h1 {
+
+
+    .profile {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .profile img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .profile h2 {
         font-size: 14px;
-        /* tamanho menor no mobile */
-        transform: none !important;
-        /* remove qualquer scale aplicado */
-        white-space: nowrap;
-        /* impede quebra de linha */
-        overflow: hidden;
-        /* impede que ultrapasse */
-        text-overflow: ellipsis;
-        /* adiciona "..." se necessário */
+    }
+
+    .profile p {
+        font-size: 14px;
     }
 
     .nav-bar ul {
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
+        align-items: center;
         padding: 0;
         margin: 0;
         gap: 16px;
     }
 
     .nav-bar ul li a {
-        display: block;
         padding: 0 8px;
         /* espaço nas laterais dos links */
         font-size: 12px;
-        transform: scale(1.2);
-        /* reduz escala para não estourar */
         white-space: nowrap;
     }
 

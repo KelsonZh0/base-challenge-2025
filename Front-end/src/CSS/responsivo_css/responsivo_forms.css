@@ -1,0 +1,49 @@
+/* Extra Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+    overflow-y: auto;
+  }
+
+  .container {
+    max-height: none;
+    padding: 16px;
+    box-shadow: none;
+  }
+
+  h1 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .alerta-obrigatorio {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  form label {
+    font-size: 16px;
+    margin: 8px 0 4px;
+  }
+
+  form input {
+    padding: 7px;
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .radio-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .radio-option {
+    text-align: center;
+  }
+}
