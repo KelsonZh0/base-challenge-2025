@@ -21,13 +21,14 @@ main {
 
 /* Estilo do container herdando do cartao-integrante */
 .container {
-  background-color: 	#FDE6C6;
+  background-color: #FDE6C6;
   padding: 40px;
   border-radius: 10px;
   max-width: 1000px;
-  margin:auto;
- box-shadow: 0 2px 6px rgba(255, 112, 67, 0.25);
+  margin: auto;
+  box-shadow: 0 2px 6px rgba(255, 112, 67, 0.25);
   box-sizing: border-box;
+  position: relative;
 }
 
 /* Sessão da FAQ */
@@ -49,7 +50,8 @@ main {
 .faq:hover {
   transform: scale(1.06);
   box-shadow: 0 6px 16px rgba(255, 112, 67, 0.35);
-;
+  position: absolute
+  ;
 }
 
 /* Cabeçalho clicável */
@@ -66,7 +68,8 @@ main {
 
 .faq h3:hover {
   background-color: #FFCC80;
-  font-size: 22px; /* crescimento perceptível */
+  font-size: 22px;
+  /* crescimento perceptível */
 }
 
 /* Conteúdo escondido inicialmente */

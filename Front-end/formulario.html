@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atendimento</title>
-    <link rel="stylesheet" href="Front-end/src/CSS/reset.css">
+    <link rel="stylesheet" href="src/CSS/reset.css">
     <link rel="stylesheet" href="src/CSS/style_html/formualario.css">
     <link rel="stylesheet" href="src/CSS/responsivo_css/responsivo_forms.css">
 </head>
@@ -90,9 +90,10 @@
                 <label class="radio-option" for="auxilio-nao">Não</label>
             </div>
 
-            <button type="submit">ENVIAR</button>
-        </form>
 
+            <button type="submit" id="botao-enviar" disabled>ENVIAR</button>
+        </form>
+        <div id="mensagem-erro"></div>
     </main>
     <script src="./src/java-script/formulario.js"></script>
 </body>
