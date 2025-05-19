@@ -127,5 +127,5 @@ form.addEventListener("submit", function (e) {
   }
 
   localStorage.setItem("nomeUsuario", nome); // Armazena o nome para usar depois
-  window.location.href = "index.html";       // Redireciona para página de confirmação
+  window.location.href = "./src/index.html";       // Redireciona para página de confirmação
 });
