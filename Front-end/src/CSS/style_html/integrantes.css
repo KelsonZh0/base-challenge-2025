@@ -1,16 +1,18 @@
+/* ========== BASE MOBILE FIRST ========== */
 
 main {
-  margin-left: 200px;
-  padding: 40px;
+  margin-left: 0;
+  padding: 20px;
   width: 100%;
 }
+
 .integrantes {
   list-style: none;
   padding: 0;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  max-width: 800px;
+  max-width: 100%;
   position: relative;
   overflow: visible;
 }
@@ -18,19 +20,19 @@ main {
 .cartao-integrante {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: none;
-  background-color:#FDE6C6;
+  background-color: #FDE6C6;
   border-radius: 10px;
   overflow: hidden;
-  padding: 40px;
-  max-width: 900px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  max-width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   box-sizing: border-box;
   animation: fade 0.5s ease-in-out;
 }
 
 .cartao-integrante:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .cartao-integrante.ativo {
@@ -44,13 +46,14 @@ main {
 
 .cartao-topo {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 16px;
+  text-align: center;
 }
 
 .cartao-imagem img {
-  width: 150px;
+  width: 120px;
   height: auto;
   border-radius: 10px;
 }
@@ -59,33 +62,31 @@ main {
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  justify-content: right;
+  align-items: center;
 }
 
 .nome {
-  font-size: 36px;
+  font-size: 26px;
   font-weight: bold;
   margin: 0;
-  color: 	#A84421;
+  color: #A84421;
 }
 
 .rm {
-  font-size: 22px;
-  color: 	#9F5C32;
+  font-size: 18px;
+  color: #9F5C32;
 }
 
 .links-sociais {
   margin-top: 12px;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 16px;
+  justify-content: center;
+  gap: 14px;
 }
 
 .links-sociais img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   transition: transform 0.3s;
 }
 
@@ -94,20 +95,22 @@ main {
 }
 
 .sobre {
-  color: 	#2B1D1A;
-  font-size: 20px;
+  color: #2B1D1A;
+  font-size: 16px;
   margin-top: 15px;
+  text-align: justify;
 }
 
-.sobre h3{
+.sobre h3 {
   margin-bottom: 10px;
-  color:	#2B1D1A;
+  color: #2B1D1A;
+  font-size: 18px;
 }
 
 .sobre p {
-    line-height: 1.5;
+  line-height: 1.5;
+  font-size: 15px;
 }
-
 
 button#btn-proximo {
   display: block;
@@ -123,5 +126,5 @@ button#btn-proximo {
 }
 
 button#btn-proximo:hover {
-  background-color: #E76F00
+  background-color: #E76F00;
 }

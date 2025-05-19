@@ -1,96 +1,86 @@
 main {
-    margin-left: 200px;
-    padding: 40px;
-    width: 100%;
+  margin-left: 0; /* Remove margem lateral para telas pequenas */
+  padding: 20px;
+  width: 100%;
 }
 
-/* Título e subtítulo com estilo padronizado */
 .contato-title {
-    color: #A84421;
-    font-size: 35px;
-    margin-bottom: 10px;
-    text-align: center;
+  color: #A84421;
+  font-size: 26px; /* Menor para caber melhor em mobile */
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .contato-subtitle {
-    font-size: 20px;
-    color: #9F5C32;
-    margin-bottom: 25px;
-    text-align: center;
+  font-size: 16px;
+  color: #9F5C32;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-/* Estilo do container herdando do cartao-integrante */
 .container {
-    background-color: #FDE6C6;
-    padding: 40px;
-    border-radius: 10px;
-    max-width: 1000px;
-    margin: auto;
-    box-shadow: 0 2px 6px rgba(255, 112, 67, 0.25);
-    box-sizing: border-box;
+  background-color: #FDE6C6;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 100%;
+  margin: auto;
+  box-shadow: 0 2px 6px rgba(255, 112, 67, 0.25);
+  box-sizing: border-box;
 }
 
-/* Sessão da FAQ */
 .contato-section {
-    margin-top: 30px;
+  margin-top: 20px;
 }
 
-/* Cada pergunta */
 .contato {
-    margin-bottom: 20px;
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid #F77F00;
-    background-color: #FFF3E0;
-    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #F77F00;
+  background-color: #FFF3E0;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Efeito de crescimento ao passar o mouse */
 .contato:hover {
-    transform: scale(1.06);
-    box-shadow: 0 6px 16px rgba(255, 112, 67, 0.35);
-    ;
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(255, 112, 67, 0.25);
 }
 
-/* Cabeçalho clicável */
 .contato h3 {
-    padding: 12px 16px;
-    margin: 0;
-    font-size: 24px;
-    cursor: pointer;
-    color: #BF360C;
-    font-weight: bold;
-    transition: font-size 0.3s ease;
+  padding: 10px 14px;
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  color: #BF360C;
+  font-weight: bold;
+  transition: font-size 0.3s ease;
 }
 
 .contato h3:hover {
-    background-color: #FFCC80;
-    font-size: 22px;
-    /* crescimento perceptível */
+  background-color: #FFCC80;
+  font-size: 17px;
 }
 
 .contato h3 a {
-    color: #BF360C;
-    text-decoration: none;
+  color: #BF360C;
+  text-decoration: none;
 }
 
-/* Conteúdo escondido inicialmente */
 .contato p {
-    display: none;
-    padding: 12px 16px;
-    margin: 0;
-    background-color: #FFF8E1;
-    color: #333;
-    border-top: 1px solid #F77F00;
-    font-size: 20px;
+  display: none;
+  padding: 10px 14px;
+  margin: 0;
+  background-color: #FFF8E1;
+  color: #333;
+  border-top: 1px solid #F77F00;
+  font-size: 16px;
 }
 
-/* Mostrar resposta ao abrir */
 .contato.active p {
-    display: block;
+  display: block;
 }
 
-.contato p a{
-    color: #000;
-
+.contato p a {
+  color: #000;
 }

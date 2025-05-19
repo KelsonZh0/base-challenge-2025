@@ -1,87 +1,81 @@
-/* Extra Small devices (phones, 600px and down) - Correções visuais */
-@media (max-width: 600px) {
-    header {
-        width: 100px;
-        height: 100vh;
-        position: fixed;
-        text-align: center;
-        padding: 20px 10px;
-        /* espaço interno */
-        box-sizing: border-box;
-    }
-
-
-
-    .profile {
-        text-align: center;
-        margin-bottom: 16px;
-    }
-
-    .profile img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .profile h2 {
-        font-size: 14px;
-    }
-
-    .profile p {
-        font-size: 14px;
-    }
-
-    .nav-bar ul {
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-        margin: 0;
-        gap: 16px;
-    }
-
-    .nav-bar ul li a {
-        padding: 0 8px;
-        /* espaço nas laterais dos links */
-        font-size: 12px;
-        white-space: nowrap;
-    }
-  
-    main {
-      margin-left: 100px;
-      padding: 16px;
-      max-width: calc(100vw - 100px); /* evita que o conteúdo ultrapasse a tela */
-      overflow-x: hidden;
-      box-sizing: border-box;
-    }
-  
-    .cartao-topo {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .cartao-imagem img {
-      width: 100px;
-    }
-  
-    .nome {
-      font-size: 24px;
-    }
-  
-    .rm {
-      font-size: 16px;
-    }
-  
-    .sobre {
-      font-size: 16px;
-    }
-  
-    .links-sociais img {
-      width: 40px;
-      height: 40px;
-    }
-  
-    button#btn-proximo {
-      width: 100%;
-    }
+/* Small devices (≥600px) */
+@media (min-width: 600px) {
+  .cartao-topo {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
   }
-  
+
+  .detalhes {
+    align-items: flex-end;
+  }
+
+  .links-sociais {
+    justify-content: flex-end;
+  }
+}
+
+/* Medium devices (≥768px) */
+@media (min-width: 768px) {
+  main {
+    margin-left: 290px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .integrante{
+    max-width: 900px;
+    width: 100%;
+  }
+
+  .cartao-integrante {
+    max-width: 900px;
+    width: 100%;
+  }
+
+  .nome {
+    font-size: 36px;
+  }
+
+  .rm {
+    font-size: 22px;
+  }
+
+  .links-sociais img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .sobre {
+    font-size: 18px;
+  }
+
+  .sobre p {
+    font-size: 16px;
+  }
+
+    button#btn-proximo {
+    margin: 20px auto 0;           /* centraliza */
+    max-width: 900px;              /* igual ao cartão */
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 24px;
+  }
+}
+
+
+/* Large devices (≥992px) */
+@media (min-width: 992px) {
+  .cartao-integrante {
+    max-width: 900px;
+  }
+}
+
+/* Extra-Large devices (≥1300px) */
+@media (min-width: 1300px) {
+  .cartao-integrante {
+    max-width: 1100px;
+  }
+}

@@ -1,44 +1,40 @@
 main {
-  margin-left: 200px;
-  padding: 40px;
+  margin-left: 0;
+  padding: 20px;
   width: 100%;
 }
 
-/* Título e subtítulo com estilo padronizado */
 .faq-title {
   color: #A84421;
-  font-size: 35px;
+  font-size: 24px;
   margin-bottom: 10px;
   text-align: center;
 }
 
 .faq-subtitle {
-  font-size: 20px;
+  font-size: 16px;
   color: #9F5C32;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
-/* Estilo do container herdando do cartao-integrante */
 .container {
   background-color: #FDE6C6;
-  padding: 40px;
+  padding: 20px;
   border-radius: 10px;
-  max-width: 1000px;
+  max-width: 100%;
   margin: auto;
   box-shadow: 0 2px 6px rgba(255, 112, 67, 0.25);
   box-sizing: border-box;
   position: relative;
 }
 
-/* Sessão da FAQ */
 .faq-section {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
-/* Cada pergunta */
 .faq {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid #F77F00;
@@ -46,20 +42,15 @@ main {
   transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Efeito de crescimento ao passar o mouse */
 .faq:hover {
-  transform: scale(1.06);
-  box-shadow: 0 6px 16px rgba(255, 112, 67, 0.35);
-  position: absolute
-  ;
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(255, 112, 67, 0.25);
 }
 
-/* Cabeçalho clicável */
 .faq h3 {
-  padding: 12px 16px;
+  padding: 10px 14px;
   margin: 0;
-  font-size: 24px;
-  ;
+  font-size: 18px;
   cursor: pointer;
   color: #BF360C;
   font-weight: bold;
@@ -68,22 +59,19 @@ main {
 
 .faq h3:hover {
   background-color: #FFCC80;
-  font-size: 22px;
-  /* crescimento perceptível */
+  font-size: 17px;
 }
 
-/* Conteúdo escondido inicialmente */
 .faq p {
   display: none;
-  padding: 12px 16px;
+  padding: 10px 14px;
   margin: 0;
   background-color: #FFF8E1;
   color: #333;
   border-top: 1px solid #F77F00;
-  font-size: 20px;
+  font-size: 16px;
 }
 
-/* Mostrar resposta ao abrir */
 .faq.active p {
   display: block;
 }
