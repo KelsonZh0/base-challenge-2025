@@ -38,12 +38,12 @@ main {
   overflow: hidden;
   border: 1px solid #F77F00;
   background-color: #FFF3E0;
-  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contato:hover {
-  transform: scale(1.03);
-  box-shadow: 0 4px 12px rgba(255, 112, 67, 0.25);
+  box-shadow: 0 6px 16px rgba(255, 112, 67, 0.35);
+  background-color: #ffE0B2;
 }
 
 .contato h3 {
@@ -55,11 +55,13 @@ main {
   color: #BF360C;
   font-weight: bold;
   transition: font-size 0.3s ease;
+  will-change: transform;
 }
 
 .contato h3:hover {
   background-color: #FFCC80;
-  font-size: 17px;
+  transform: scale(1.12); /* Crescimento suave no hover */
+  transform-origin: center; /* Mantém crescimento simétrico */
 }
 
 .contato h3 a {

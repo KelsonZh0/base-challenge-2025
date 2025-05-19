@@ -39,17 +39,20 @@ main {
   overflow: hidden;
   border: 1px solid #F77F00;
   background-color: #FFF3E0;
-  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
 }
 
-.faq:hover {
-  transform: scale(1.03);
-  box-shadow: 0 4px 12px rgba(255, 112, 67, 0.25);
+.faq h3:hover {
+  background-color: #FFCC80;
+  transform: scale(1.12); /* Crescimento suave no hover */
+  transform-origin: center; /* Mantém crescimento simétrico */
 }
 
 .faq h3 {
   padding: 10px 14px;
   margin: 0;
+    text-align: center;
   font-size: 18px;
   cursor: pointer;
   color: #BF360C;
@@ -59,7 +62,7 @@ main {
 
 .faq h3:hover {
   background-color: #FFCC80;
-  font-size: 17px;
+    font-size: 19px;
 }
 
 .faq p {

@@ -20,9 +20,11 @@
 /* ========== Medium devices (≥768px) ========== */
 @media (min-width: 768px) {
   main {
-    margin-left: 290px; /* Recuo igual à largura da navbar fixa */
+    margin-left: 290px;
+    /* Recuo igual à largura da navbar fixa */
     padding: 40px;
-    width: calc(100% - 290px); /* Evita ultrapassar a tela */
+    width: calc(100% - 290px);
+    /* Evita ultrapassar a tela */
   }
 
   .container {
@@ -42,8 +44,9 @@
     margin-bottom: 20px;
   }
 
+
   .contato:hover {
-    transform: scale(1.06);
+    background-color: #FFE0B2;
     box-shadow: 0 6px 16px rgba(255, 112, 67, 0.35);
   }
 
@@ -52,7 +55,7 @@
   }
 
   .contato h3:hover {
-    font-size: 22px;
+    font-size: 26px;
   }
 
   .contato p {

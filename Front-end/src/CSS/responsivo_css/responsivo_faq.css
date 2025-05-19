@@ -1,77 +1,99 @@
 /* Small devices (≥600px) */
 @media (min-width: 600px) {
-  .faq-title {
-    font-size: 28px;
-  }
+    .faq-title {
+        font-size: 28px;
+    }
 
-  .faq-subtitle {
-    font-size: 18px;
-  }
+    .faq-subtitle {
+        font-size: 18px;
+    }
 
-  .faq h3 {
-    font-size: 20px;
-  }
+    .faq h3 {
+        font-size: 20px;
+    }
 
-  .faq p {
-    font-size: 18px;
-  }
+    .faq p {
+        font-size: 18px;
+    }
 }
 
 /* Medium devices (≥768px) */
 @media (min-width: 768px) {
-  main {
-    margin-left: 290px;
-    padding: 40px;
-    display: flex;
-    justify-content: center;
-  }
+    main {
+        margin-left: 290px;
+        padding: 40px;
+        width: calc(100% - 290px);
+        /* Evita ultrapassar a tela */
+    }
 
-  .container {
-    max-width: 900px;
-    width: 100%;
-    padding: 40px;
-  }
+    .container {
+        max-width: 800px;
+        margin: auto;
+    }
 
-  .faq-title {
-    font-size: 32px;
-  }
+    .faq-title {
+        font-size: 30px;
+    }
 
-  .faq-subtitle {
-    font-size: 20px;
-  }
+    .faq-subtitle {
+        font-size: 18px;
+    }
 
-  .faq:hover {
-    transform: scale(1.06);
-    box-shadow: 0 6px 16px rgba(255, 112, 67, 0.35);
-  }
+    .faq {
+        margin-bottom: 20px;
+    }
 
-  .faq h3 {
-    font-size: 24px;
-  }
+    .faq:hover {
+        background-color: #FFE0B2;
+        box-shadow: 0 6px 16px rgba(255, 112, 67, 0.35);
+    }
 
-  .faq h3:hover {
-    font-size: 22px;
-  }
+    .faq h3 {
+        font-size: 24px;
+    }
 
-  .faq p {
-    font-size: 20px;
-  }
+    .faq h3:hover {
+        font-size: 26px;
+    }
+
+    .faq p {
+        font-size: 20px;
+    }
 }
 
 /* Large devices (≥992px) */
 @media (min-width: 992px) {
-  .container {
-    max-width: 1000px;
-  }
+    .container {
+        max-width: 1000px;
+        padding: 40px;
+    }
 
-  .faq-title {
-    font-size: 35px;
-  }
+    .faq-title {
+        font-size: 32px;
+    }
+
+    .faq h3 {
+
+        font-size: 26px;
+    }
+
+    .faq p {
+        font-size: 20px;
+    }
 }
 
 /* Extra-Large devices (≥1300px) */
 @media (min-width: 1300px) {
-  .container {
-    max-width: 1200px;
-  }
+    .container {
+        max-width: 1200px;
+    }
+
+        .faq-title {
+        font-size: 35px;
+    }
+
+    .faq-subtitle {
+        font-size: 22px;
+    }
+
 }
