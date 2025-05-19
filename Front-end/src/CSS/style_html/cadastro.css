@@ -1,100 +1,187 @@
+/* ========== MOBILE FIRST (até 600px) ========== */
+
 main {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
 }
 
-/* Estilo do container com as duas colunas */
+/* Container das colunas */
 .bloco-opcoes {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  margin-top: 30px;
-  width: 100%;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 30px;
+    width: 100%;
+    align-items: center;
 }
 
-/* Cada coluna: App e Navegador */
+/* Cada coluna (App / Navegador) ocupa quase a tela toda */
 .coluna {
-  width: 90%;
-  max-width: 500px;
+    width: 90%;
+    max-width: 500px;
 }
 
-/* Responsivo: coloca lado a lado em telas maiores */
-@media (min-width: 900px) {
-  .bloco-opcoes {
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  .coluna {
-    width: 45%;
-  }
-}
-
-/* Cartões das opções (App ou Navegador) */
+/* Cartão visual com sombra */
 .opcao {
-  background-color: #fde6c6;
-  padding: 20px;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    background-color: #fde6c6;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Botões */
+/* Botões grandes e legíveis */
 .botao {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: #F7941D;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #F7941D;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s;
 }
 
 .botao:hover {
-  background-color: #e67e00;
+    background-color: #e67e00;
 }
 
-/* Tutorial (embaixo de cada opção) */
+/* Tutorial abaixo de cada opção */
 .tutorial {
-  background-color: #fde6c6;
-  padding: 20px;
-  margin-top: 20px;
-  border-radius: 12px;
+    background-color: #fde6c6;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
 }
 
 .tutorial h3 {
-  font-size: 20px;
-  margin-bottom: 16px;
-  text-align: center;
+    font-size: 18px;
+    margin-bottom: 16px;
+    text-align: center;
 }
 
 .tutorial ol {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .tutorial li {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .tutorial img {
-  width: 100%;
-  max-width: 280px;
-  max-height: 420px;
-  object-fit: contain;
-  display: block;
-  margin: 10px auto;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 280px;
+    max-height: 420px;
+    object-fit: contain;
+    display: block;
+    margin: 10px auto;
+    background-color: #fff8e6;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .tutorial-nav img {
-  max-width: 520px;
-  max-height: 480px;
+    width: 100%;
+    max-width: 520px;
+    max-height: 480px;
+}
+
+/* ========== Small devices (≥600px) ========== */
+@media (min-width: 600px) {
+    .botao {
+        font-size: 17px;
+    }
+
+    .tutorial h3 {
+        font-size: 19px;
+    }
+
+    .tutorial li {
+        font-size: 16px;
+    }
+}
+
+/* ========== Medium devices (≥768px) ========== */
+@media (min-width: 768px) {
+    main {
+        padding: 40px;
+    }
+
+    .botao {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+
+    .tutorial h3 {
+        font-size: 20px;
+    }
+
+    .tutorial li {
+        font-size: 17px;
+    }
+
+    .tutorial img {
+        max-width: 340px;
+        max-height: 460px;
+    }
+
+    .tutorial-nav img {
+        max-width: 560px;
+    }
+}
+
+/* ========== Large devices (≥992px) ========== */
+@media (min-width: 992px) {
+    .bloco-opcoes {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .coluna {
+        width: 45%;
+    }
+
+    .tutorial h3 {
+        font-size: 20px;
+    }
+
+    .tutorial li {
+        font-size: 17px;
+    }
+
+    .tutorial img {
+        max-width: 380px;
+        max-height: 500px;
+    }
+
+    .tutorial-nav img {
+        max-width: 600px;
+    }
+}
+
+/* ========== Extra-Large devices (≥1300px) ========== */
+@media (min-width: 1300px) {
+    .coluna {
+        max-width: 700px;
+    }
+
+    .tutorial img {
+        max-width: 420px;
+        max-height: 520px;
+    }
+
+    .tutorial-nav img {
+        max-width: 700px;
+        max-height: 600px;
+    }
 }
