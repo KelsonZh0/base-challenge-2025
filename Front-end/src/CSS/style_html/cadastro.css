@@ -1,0 +1,100 @@
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Estilo do container com as duas colunas */
+.bloco-opcoes {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 30px;
+  width: 100%;
+  align-items: center;
+}
+
+/* Cada coluna: App e Navegador */
+.coluna {
+  width: 90%;
+  max-width: 500px;
+}
+
+/* Responsivo: coloca lado a lado em telas maiores */
+@media (min-width: 900px) {
+  .bloco-opcoes {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .coluna {
+    width: 45%;
+  }
+}
+
+/* Cartões das opções (App ou Navegador) */
+.opcao {
+  background-color: #fde6c6;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Botões */
+.botao {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #F7941D;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.botao:hover {
+  background-color: #e67e00;
+}
+
+/* Tutorial (embaixo de cada opção) */
+.tutorial {
+  background-color: #fde6c6;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 12px;
+}
+
+.tutorial h3 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.tutorial ol {
+  list-style: none;
+  padding: 0;
+}
+
+.tutorial li {
+  margin-bottom: 20px;
+}
+
+.tutorial img {
+  width: 100%;
+  max-width: 280px;
+  max-height: 420px;
+  object-fit: contain;
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.tutorial-nav img {
+  max-width: 520px;
+  max-height: 480px;
+}

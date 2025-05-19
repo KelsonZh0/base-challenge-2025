@@ -72,6 +72,7 @@ main {
 .contato p {
   display: none;
   padding: 10px 14px;
+    text-align: center;
   margin: 0;
   background-color: #FFF8E1;
   color: #333;
