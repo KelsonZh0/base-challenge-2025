@@ -95,6 +95,24 @@ main {
     max-height: 480px;
 }
 
+.botao {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #F7941D;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.icon-app {
+  width: 20px;
+  height: 20px;
+}
+
+
 /* ========== Small devices (≥600px) ========== */
 @media (min-width: 600px) {
     .botao {
