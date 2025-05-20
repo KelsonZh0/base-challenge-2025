@@ -36,7 +36,7 @@ main {
 /* Botões grandes e legíveis */
 .botao {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 16px;
     padding: 10px 20px;
     background-color: #F7941D;
     color: white;
