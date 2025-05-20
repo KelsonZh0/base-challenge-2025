@@ -1,5 +1,4 @@
 // ------------------ INICIALIZAÇÃO --------------------
-// ------------------ INICIALIZAÇÃO --------------------
 const form = document.getElementById("form-pre-atendimento"); // Seleciona o formulário
 const botaoEnviar = document.getElementById("botao-enviar");   // Seleciona o botão ENVIAR
 const inputs = form.querySelectorAll("input[required]");       // Seleciona todos os inputs obrigatórios
@@ -47,17 +46,6 @@ form.addEventListener("input", () => {
     if (!input.checkValidity()) valido = false;
   });
 
-  // Verifica se os dois campos de e-mail são iguais
-  const email = document.getElementById("email").value;
-  const confirmar = document.getElementById("confirmar-email").value;
-  const confirmarInput = document.getElementById("confirmar-email");
-
-  if (email !== confirmar) {
-    valido = false;
-    confirmarInput.setCustomValidity("Os e-mails não coincidem");
-  } else {
-    confirmarInput.setCustomValidity("");
-  }
 
   // Valida se há pelo menos um item marcado em cada grupo de rádio
   radioGroups.forEach(name => {
@@ -111,8 +99,6 @@ function validarCPF(cpf) {
 form.addEventListener("submit", function (e) {
   e.preventDefault(); // Evita envio padrão
 
-  const email = document.getElementById("email").value;
-  const confirmar = document.getElementById("confirmar-email").value;
   const nome = document.getElementById("nome").value;
   const cpf = document.getElementById("cpf").value;
 
@@ -121,11 +107,6 @@ form.addEventListener("submit", function (e) {
     return;
   }
 
-  if (email !== confirmar) {
-    alert("Os e-mails não coincidem."); // Alerta se e-mails diferentes
-    return;
-  }
-
   localStorage.setItem("nomeUsuario", nome); // Armazena o nome para usar depois
-  window.location.href = "./src/pagina-incial.html";       // Redireciona para página de confirmação
+  window.location.href = "pagina-incial.html";       // Redireciona para página de confirmação
 });

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atendimento</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style_html/formualario.css">
+</head>
+
+<body>
+    <main class="container">
+        <h1>Formulário de Atendimento</h1>
+        <div class="alerta-obrigatorio">
+            <p>
+                Por favor, preencha todos os campos abaixo.
+                Os campos marcados com <strong>*</strong> são obrigatórios.
+            </p>
+        </div>
+
+        <form id="form-pre-atendimento">
+            <label for="nome">Nome completo: *</label>
+            <input type="text" id="nome" name="nome" maxlength="100" placeholder="Digite seu nome ">
+
+            <label for="cpf">CPF: *</label>
+            <input type="text" id="cpf" name="cpf" required placeholder="000.000.000-00">
+
+            <label for="data-nascimento">Data de nascimento: *</label>
+            <input type="date" id="data-nascimento" name="data-nascimento" required>
+
+            <label for="email">E-mail: </label>
+            <input type="email" id="email" name="email" maxlength="100" placeholder="seuemail@email.com">
+
+            <label for="telefone">Telefone: *</label>
+            <input type="tel" id="telefone" name="telefone" required placeholder="(11) 91234-5678">
+
+            <label>Qual é a sua sexualidade? *</label>
+            <div class="radio-group">
+                <input type="radio" id="sexualidade-hetero" name="sexualidade" value="Heterossexual" required>
+                <label class="radio-option" for="sexualidade-hetero">Heterossexual</label>
+
+                <input type="radio" id="sexualidade-homo" name="sexualidade" value="Homossexualidade">
+                <label class="radio-option" for="sexualidade-homo">Homossexual</label>
+
+                <input type="radio" id="sexualidade-bi" name="sexualidade" value="Bissexualidade">
+                <label class="radio-option" for="sexualidade-bi">Bissexual</label>
+
+                <input type="radio" id="sexualidade-demi" name="sexualidade" value="Demissexualidade">
+                <label class="radio-option" for="sexualidade-demi">Demissexual</label>
+
+                <input type="radio" id="sexualidade-pan" name="sexualidade" value="Pansexualidade">
+                <label class="radio-option" for="sexualidade-pan">Pansexual</label>
+
+                <input type="radio" id="sexualidade-a" name="sexualidade" value="Pansexualidade">
+                <label class="radio-option" for="sexualidade-a">asexual</label>
+            </div>
+
+
+            <label>Possui dificuldade ao mexer no celular ? *</label>
+            <div class="radio-group">
+                <input type="radio" id="celular-sim" name="dificuldade_celular" value="sim" required>
+                <label class="radio-option" for="celular-sim">Sim</label>
+
+                <input type="radio" id="celular-nao" name="dificuldade_celular" value="nao">
+                <label class="radio-option" for="celular-nao">Não</label>
+            </div>
+
+
+            <label>Possui dificuldade de leitura ? *</label>
+            <div class="radio-group">
+                <input type="radio" id="leitura-sim" name="dificuldade_leitura" value="sim" required>
+                <label class="radio-option" for="leitura-sim">Sim</label>
+
+                <input type="radio" id="leitura-nao" name="dificuldade_leitura" value="nao">
+                <label class="radio-option" for="leitura-nao">Não</label>
+            </div>
+
+            <label>Tem alguém próximo para te auxiliar ? *</label>
+            <div class="radio-group">
+                <input type="radio" id="auxilio-sim" name="tem_auxilio" value="sim" required>
+                <label class="radio-option" for="auxilio-sim">Sim</label>
+
+                <input type="radio" id="auxilio-nao" name="tem_auxilio" value="nao">
+                <label class="radio-option" for="auxilio-nao">Não</label>
+            </div>
+
+
+            <button type="submit" id="botao-enviar" disabled>ENVIAR</button>
+        </form>
+        <div id="mensagem-erro"></div>
+    </main>
+    <script src="java-script/formulario.js"></script>
+</body>
+
+</html>
