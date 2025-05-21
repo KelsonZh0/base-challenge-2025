@@ -1,26 +1,3 @@
-    /* input:invalid,
-  .radio-group.invalid {
-    border-color: #f44336;
-    animation: shake 0.2s ease-in-out 0s 2;
-  }
-
-  input:valid,
-  .radio-group.valid {
-    border-color: #4CAF50;
-  }
-
-    input,
-  .radio-group {
-    transition: border-color 0.3s ease;
-  }
-
-  @keyframes shake {
-    0% { transform: translateX(0); }
-    25% { transform: translateX(-4px); }
-    50% { transform: translateX(4px); }
-    75% { transform: translateX(-4px); }
-    100% { transform: translateX(0); }
-  }*/
 
   button:disabled {
     background-color: #ccc !important;
