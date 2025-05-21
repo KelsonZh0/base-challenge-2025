@@ -26,7 +26,7 @@ function iniciarCarrossel(botaoVoltarId, botaoProximoId, seletorCartoes) {
 iniciarCarrossel(
   "btn-voltar-app",
   "btn-proximo-app",
-  ".coluna:nth-of-type(1) .cartao-tutorial"
+  ".bloco-app .cartao-tutorial"
 );
 
 // Iniciar carrossel do Navegador

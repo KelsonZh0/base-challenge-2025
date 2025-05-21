@@ -17,13 +17,17 @@
 
 /* Medium devices (≥768px) */
 @media (min-width: 768px) {
-  main {
-    margin-left: 290px;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+main {
+  margin-left: 290px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
 
   .integrante{
     max-width: 900px;
@@ -56,13 +60,13 @@
     font-size: 16px;
   }
 
-    button#btn-proximo {
-    margin: 20px auto 0;           /* centraliza */
-    max-width: 900px;              /* igual ao cartão */
-    width: 100%;
-    box-sizing: border-box;
-    padding: 12px 24px;
-  }
+button#btn-proximo {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 900px;
+  padding: 14px 24px;
+  font-size: 18px;
+}
 }
 
 
