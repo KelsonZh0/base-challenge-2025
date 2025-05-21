@@ -33,5 +33,5 @@ iniciarCarrossel(
 iniciarCarrossel(
   "btn-voltar-nav",
   "btn-proximo-nav",
-  ".coluna:nth-of-type(2) .cartao-tutorial"
+  ".bloco-nav .cartao-tutorial"
 );
