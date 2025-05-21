@@ -1,7 +1,15 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
 main {
   margin-left: 0; /* Remove margem lateral para telas pequenas */
   padding: 20px;
   width: 100%;
+  flex: 1;
 }
 
 .contato-title {

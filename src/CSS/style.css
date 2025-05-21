@@ -16,6 +16,7 @@ header {
   z-index: 2;
 }
 
+
 .profile {
   text-align: center;
   margin-bottom: 1rem;
@@ -77,6 +78,51 @@ header {
   color: #fff;
   transform: scale(1.05);
 }
+
+.footer {
+  background: #F7941D;
+  color: white;
+  padding: 24px 0;
+  text-align: center;
+  width: 100%;
+  min-height: 100px;
+  margin-top: 40px;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+
+
 
 
 /* ========== Small devices (≥600px) ========== */
