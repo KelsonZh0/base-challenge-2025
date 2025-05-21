@@ -77,6 +77,14 @@ main {
     line-height: 1.5;
 }
 
+.cartao-tutorial {
+    display: none;
+}
+
+.cartao-tutorial.ativo {
+    display: block;
+}
+
 .tutorial img {
     width: 100%;
     max-width: 280px;
@@ -111,6 +119,31 @@ main {
   width: 20px;
   height: 20px;
 }
+
+.botoes-carrossel {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 12px;
+}
+
+.botoes-carrossel button {
+  background-color: #F7941D;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  flex: 1;
+  transition: background-color 0.3s;
+}
+
+.botoes-carrossel button:hover {
+  background-color: #e67e00;
+}
+
 
 
 /* ========== Small devices (≥600px) ========== */
@@ -155,7 +188,14 @@ main {
     .tutorial-nav img {
         max-width: 560px;
     }
+
+      .botoes-carrossel button {
+    font-size: 17px;
+    padding: 12px 20px;
+  }
 }
+
+
 
 /* ========== Large devices (≥992px) ========== */
 @media (min-width: 992px) {
@@ -185,6 +225,12 @@ main {
     .tutorial-nav img {
         max-width: 600px;
     }
+
+      .botoes-carrossel button {
+    font-size: 18px;
+    padding: 14px 24px;
+    max-width: 160px;
+  }
 }
 
 /* ========== Extra-Large devices (≥1300px) ========== */
