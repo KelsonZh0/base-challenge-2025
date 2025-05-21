@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/style_html/cadastro.css">
 
+        <script defer src="../java-script/cadastro.js"></script>
+
     <title>Página Inicial</title>
 </head>
 
@@ -39,75 +41,194 @@
                     <h2> Usar pelo Celular</h2>
                     <p>Para uma experiência mais completa, recomendamos usar app do <strong>Portal do Paciente
                             HC</strong>.</p>
-                        <a href="https://play.google.com/store/apps/details?id=com.netihc.portaldopaciente"
-                            class="botao" target="_blank"> <img src="img-passo a passo/app.png" alt="Play Store"
-                                class="icon-app">Abrir na Play Store</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.netihc.portaldopaciente" class="botao"
+                        target="_blank"> <img src="img-passo a passo/app.png" alt="Play Store" class="icon-app">Abrir na
+                        Play Store</a>
 
-                        <a href="https://apps.apple.com/br/app/portal-do-paciente-hc/id1572694502 " class="botao"
-                            target="_blank"> <img src="img-passo a passo/app-store.png" alt="App Store"
-                                class="icon-app">Abrir na App Store</a>
+                    <a href="https://apps.apple.com/br/app/portal-do-paciente-hc/id1572694502 " class="botao"
+                        target="_blank"> <img src="img-passo a passo/app-store.png" alt="App Store"
+                            class="icon-app">Abrir na App Store</a>
                 </div>
 
-                <div class="tutorial tutorial-celular">
-                    <h3>Passo a passo no celular</h3>
-                    <ol>
-                        <li>
-                            <p>1️⃣ Abra o App do <strong>Portal do Paciente HC</strong></p>
-                            <img src="img-passo a passo/abrindo-app.jpg" alt="Tela do celular com o app" />
-                        </li>
-                        <li>
-                            <p>2️⃣ Clique em <strong>Acessar Portal</strong></p>
-                            <img src="img-passo a passo/acessandoaApp.jpg" alt="Imagem inicail do app " />
-                        </li>
-                        <li>
-                            <p>3️⃣ Preencha os dados com o <strong>CPF</strong> e a sua <strong>Senha</strong></p>
-                            <img src="img-passo a passo/entrandoNoApp.jpg" alt="imagem dos dasos preenchidos no app" />
-                        </li>
-                        <p>4️⃣ Para acessar a teleconsulta <strong>Clique em Menu</strong></p>
-                        <img src="img-passo a passo/acessandoMenu.jpg"
-                            alt="imagem da tela inical após o login" />
-                        </li>
-                        <li>
-                            <p>5️⃣ Clicar em <strong>Teleconsulta</strong></p>
-                            <img src="img-passo a passo/teleconsulta.jpg"
-                                alt="imagem do menu do app do HC" />
-                        </li>
-                        <li>
-                            <p>6️⃣ Você sera direcinado para aceitar o Termo de consentimento </p>
-                            <img src="img-passo a passo/direcionamentoTermo.jpg" alt="mensagem de notificação que deve aceitar o termo de consentimento" />
-                        </li>
-                                                <li>
-                            <p>7️⃣ <strong>Aceite</strong> o Termo de consentimento</p>
-                            <img src="img-passo a passo/aceitandoTermo.jpg" alt="Imagemdo termo de consentimento" />
-                        </li>
-                    </ol>
+                <ul class="tutorial ">
+                    <h3>Como usar no App</h3>
+                    <li class="cartao-tutorial ativo">
+                        <div class="cartao-topo">
+                            <h3 class="passo">Baixe o app na loja do seu celular</h3>
+                            <div class="cartao-imagem">
+                                <img src="img-passo a passo/abrindo-app.jpg" alt="Tela do celular com o app" />
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cartao-tutorial">
+                        <div class="cartao-topo">
+                            <h3 class="passo">Clique em Acessar Portal</h3>
+                            <div class="cartao-imagem">
+                                <img src="img-passo a passo/acessandoaApp.jpg" alt="Imagem inicail do app " />
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cartao-tutorial">
+                        <div class="cartao-topo">
+                            <h3 class="passo">Preencha os dados com o <strong>CPF</strong> e a sua
+                                <strong>Senha</strong>
+                            </h3>
+                            <div class="cartao-imagem">
+                                <img src="img-passo a passo/entrandoNoApp.jpg"
+                                    alt="imagem dos dasos preenchidos no app" />
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cartao-tutorial">
+                        <div class="cartao-topo">
+                            <h3 class="passo">Para acessar a teleconsulta <strong>Clique em Menu</strong>
+                            </h3>
+                            <div class="cartao-imagem">
+                                <img src="img-passo a passo/acessandoMenu.jpg"
+                                    alt="imagem da tela inical após o login" />
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cartao-tutorial">
+                        <div class="cartao-topo">
+                            <h3 class="passo">Clicar em <strong>Teleconsulta</strong>
+                            </h3>
+                            <div class="cartao-imagem">
+                                <img src="img-passo a passo/teleconsulta.jpg" alt="imagem do menu do app do HC" />
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cartao-tutorial">
+                        <div class="cartao-topo">
+                            <h3 class="passo">Você será direcinado para aceitar o Termo de consentimento
+                            </h3>
+                            <div class="cartao-imagem">
+                                <img src="img-passo a passo/direcionamentoTermo.jpg"
+                                    alt="mensagem de notificação que deve aceitar o termo de consentimento" />
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cartao-tutorial">
+                        <div class="cartao-topo">
+                            <h3 class="passo"><strong>Aceite</strong> o Termo de consentimento
+                            </h3>
+                            <div class="cartao-imagem">
+                                <img src="img-passo a passo/aceitandoTermo.jpg"
+                                    alt="Imagem do termo de consentimento" />
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cartao-tutorial">
+                        <div class="cartao-topo">
+                            <h3 class="passo"><strong>Clique</strong> em entrar na teleconsulta
+                            </h3>
+                            <div class="cartao-imagem">
+                                <img src="img-passo a passo/detalhetele.jpg"
+                                    alt="Imagem com botão para entrar na teleconsulta" />
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cartao-tutorial">
+                        <div class="cartao-topo">
+                            <h3 class="passo"><strong>Selecione</strong> o Google Chrome e clique só uma vez
+                            </h3>
+                            <div class="cartao-imagem">
+                                <img src="img-passo a passo/selecinandoNavegado.jpg"
+                                    alt="Imagem de 4 tipos de navegadores" />
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cartao-tutorial">
+                        <div class="cartao-topo">
+                            <h3 class="passo"><strong>Clique</strong> em somente ouvir
+                            </h3>
+                            <div class="cartao-imagem">
+                                <img src="img-passo a passo/autorizando audio.png" alt="Imagem " />
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cartao-tutorial">
+                        <div class="cartao-topo">
+                            <h3 class="passo"><strong>Clique</strong> na imagem da camera para ativar
+                            </h3>
+                            <div class="cartao-imagem">
+                                <img src="img-passo a passo/liberandoCamera.jpg" alt="Imagem " />
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cartao-tutorial">
+                        <div class="cartao-topo">
+                            <h3 class="passo">Clique <strong> Permitir</strong> para autorizar a utilização da camera
+                            </h3>
+                            <div class="cartao-imagem">
+                                <img src="img-passo a passo/permicaoDaCamera.jpg"
+                                    alt="Imagem de solicitação de permição" />
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cartao-tutorial">
+                        <div class="cartao-topo">
+                            <h3 class="passo">Clique <strong>Iniciar compartilhamento</strong> para iniciar a chamda com
+                                o médico
+                            </h3>
+                            <div class="cartao-imagem">
+                                <img src="img-passo a passo/opcaoDeCamera.jpg"
+                                    alt="Imagem contendo qual camera vc deve selecinar " />
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cartao-tutorial">
+                        <div class="cartao-topo">
+                            <h3 class="passo"><strong>BOA TELECONSULTA</strong>
+                            </h3>
+                            <div class="cartao-imagem">
+                                <img src="img-passo a passo/finalTele.jpg"
+                                    alt="Imagem de dua pessoas simulando uma teleconsulta " />
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="botoes-carrossel">
+                    <button id="btn-voltar-app">Voltar</button>
+                    <button id="btn-proximo-app">Próximo</button>
                 </div>
+            </div>
+
             </div>
 
             <!-- COLUNA COMPUTADOR -->
             <div class="coluna">
                 <div class="opcao">
-                    <h2> Usar pelo Computador</h2>
-                    <p>Acesse o link da consulta pelo navegador Google Chrome com câmera e microfone.</p>
+                    <h2> Acesse pelo Navegador</h2>
+                    <p>Você também pode fazer seu cadastro diretamente pelo site sem instalar nada.</p>
+                    <a href="https://portaldopaciente.hc.fm.usp.br/" class="botao" target="_blank">Acessar Site</a>
                 </div>
 
-                <div class="tutorial tutorial-computador">
-                    <h3>Passo a passo no computador</h3>
-                    <ol>
-                        <li>
-                            <p>1️⃣ Clique no link da consulta pelo e-mail ou WhatsApp</p>
-                            <img src="img-teleconsulta/link-no-email.jpg" alt="Email com link da consulta" />
-                        </li>
-                        <li>
-                            <p>2️⃣ Permita o acesso à câmera e microfone</p>
-                            <img src="img-teleconsulta/permissao-browser.jpg" alt="Permissão do navegador" />
-                        </li>
-                        <li>
-                            <p>3️⃣ Clique em 'Entrar' e aguarde o início</p>
-                            <img src="img-teleconsulta/entrando-na-consulta.jpg" alt="Entrando na videoconferência" />
-                        </li>
-                    </ol>
-                </div>
+                <ul class="tutorial tutorial-nav">
+                    <h3>Como usar o Navegador</h3>
+
+                    <li class="cartao-tutorial ativo">
+                        <div class="cartao-topo">
+                            <h3 class="passo">Clique em <strong>Acessar Portal</strong></h3>
+                            <div class="cartao-imagem">
+                                <img src="img-passo a passo/acessando o nav.png" alt="Acessando portal no navegador" />
+                            </div>
+                        </div>
+                    </li>
             </div>
         </section>
     </main>
