@@ -79,3 +79,8 @@ main {
 .faq.active p {
   display: block;
 }
+
+.faq p a {
+  color: #BF360C;
+  text-decoration: none;
+}
