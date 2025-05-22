@@ -17,8 +17,7 @@ function proximoCartao() {
 // Iniciar com o primeiro cartão visível
 mostrarCartao(indiceAtual);
 
-// Alternar automaticamente a cada 5 segundos
-setInterval(proximoCartao, 5000);
+setInterval(proximoCartao, 10000);
 
 // Alternar manualmente com botão
 botaoProximo.addEventListener('click', proximoCartao);
