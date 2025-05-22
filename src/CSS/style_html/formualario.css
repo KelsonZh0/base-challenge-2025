@@ -12,6 +12,7 @@
   
   body {
   font-family: 'Atkinson Hyperlegible', 'Source Sans Pro', 'Roboto', Arial, sans-serif;
+  font-weight: 550;
     padding: 0 12px;
     background: linear-gradient(180deg, #F7941D, #FFCC80);
     background-repeat: no-repeat;

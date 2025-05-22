@@ -3,7 +3,7 @@ body {
   margin: 0;
   flex-direction: column;
   min-height: 100vh;
-  /* altura mínima da tela inteira */
+font-weight: 550;
   font-family: 'Atkinson Hyperlegible', 'Source Sans Pro', 'Roboto', Arial, sans-serif;
   display: flex;
   background-color: #FFEFD8;
