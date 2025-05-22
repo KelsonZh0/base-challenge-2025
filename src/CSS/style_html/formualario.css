@@ -11,7 +11,7 @@
   }
   
   body {
-    font-family: Arial, sans-serif;
+  font-family: 'Atkinson Hyperlegible', 'Source Sans Pro', 'Roboto', Arial, sans-serif;
     padding: 0 12px;
     background: linear-gradient(180deg, #F7941D, #FFCC80);
     background-repeat: no-repeat;
@@ -115,3 +115,33 @@
 
     
   }
+
+.campo-validacao {
+  position: relative;
+}
+
+.campo-validacao input {
+  width: 100%;
+  padding-right: 30px; /* espaço pro ícone */
+}
+
+.icone-validacao {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+button.cancelar {
+  background-color: #cccccc;
+  color: #333;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+button.cancelar:hover {
+  background-color: #999999;
+}
+
+

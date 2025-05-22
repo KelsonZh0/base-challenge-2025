@@ -2,14 +2,16 @@
 body {
   margin: 0;
   flex-direction: column;
-   min-height: 100vh; /* altura mínima da tela inteira */
-  font-family: Arial, sans-serif;
-display: flex;
+  min-height: 100vh;
+  /* altura mínima da tela inteira */
+  font-family: 'Atkinson Hyperlegible', 'Source Sans Pro', 'Roboto', Arial, sans-serif;
+  display: flex;
   background-color: #FFEFD8;
 }
 
 header {
-  position: relative; /* Remove o fixo no mobile */
+  position: relative;
+  /* Remove o fixo no mobile */
   width: 100%;
   height: auto;
   background: linear-gradient(180deg, #F7941D, #FFCC80);
@@ -38,7 +40,7 @@ main {
   padding: 3px;
   object-fit: cover;
   margin-bottom: 0.5rem;
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .profile h2 {
@@ -88,14 +90,16 @@ main {
 }
 
 .footer {
-background: linear-gradient(to right,#FFCC80, #F7941D );
+  position: relative;
+  bottom: 0;
+  margin-top: auto;
+  background: linear-gradient(to right, #FFCC80, #F7941D);
   color: white;
   padding: 24px 0;
   text-align: center;
   width: 100%;
   box-sizing: border-box;
 }
-
 
 .footer-container {
   max-width: 1200px;
@@ -127,10 +131,6 @@ background: linear-gradient(to right,#FFCC80, #F7941D );
 .footer-links a:hover {
   text-decoration: underline;
 }
-
-
-
-
 
 /* ========== Small devices (≥600px) ========== */
 @media (min-width: 600px) {
@@ -180,10 +180,13 @@ background: linear-gradient(to right,#FFCC80, #F7941D );
     width: calc(100% - 290px);
   }
 
-.footer {
+  .footer {
     margin-left: 290px;
     width: calc(100% - 290px);
+    position: relative;
+    bottom: 0;
   }
+
 }
 
 /* ========== Large devices (≥992px): Pequenos ajustes de espaçamento e tamanho ========== */

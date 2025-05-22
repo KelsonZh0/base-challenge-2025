@@ -4,23 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial - Portal do Paciente HC</title>
-    <link rel="stylesheet" href="src/CSS/reset.css">
-    <link rel="stylesheet" href="src/CSS/style_html/paginaInicial.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
-        <script defer src="src/java-script/bot.js"></script>
+    <link rel="stylesheet" href="src/CSS/reset.css">
+    <link rel="stylesheet" href="src/CSS/style.css">
+    <link rel="stylesheet" href="src/CSS/style_html/paginaInicial.css">
+    <title>Página Inicial - Portal do Paciente HC</title>
+
+    <script defer src="src/java-script/bot.js"></script>
 </head>
 
 <body>
-    <header class="topo">
-        <div class="saudacao">
-            <h1>Olá, Usuário</h1>
-        </div>
-        <div class="perfil">
-            <span class="icone-perfil">👤</span>
-        </div>
+    <header>
+        <nav class="nav-bar">
+            <div class="profile">
+                <img src="src/Img/avatar.png" alt="Imagem de um Avatar">
+                <h2>Olá, Usuário!</h2>
+                <p>Vamos te ajudar</p>
+            </div>
+            <ul>
+                <li><a href="src/paginaAuxilio/teleconsulta.html">Auxílio Teleconsulta</a></li>
+                <li><a href="src/paginaAuxilio/cadastro.html">Auxílio Cadastro</a></li>
+                <li><a href="src/Integrantes/integrantes.html">Integrantes</a></li>
+                <li><a href="src/Contato/contato.html">Contato</a></li>
+                <li><a href="src/FAQ/FAQ.html">FAQ</a></li>
+            </ul>
+        </nav>
     </header>
-
     <main class="conteudo">
         <section class="boas-vindas">
             <img src="src/Img/LumaHC.png" alt="Médica">
@@ -58,6 +70,7 @@
                 <a href="src/Integrantes/integrantes.html" class="botao">Acessar</a>
             </div>
         </section>
+    </main>
 
     <footer class="footer">
         <div class="footer-container">

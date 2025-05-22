@@ -1,46 +1,24 @@
+
+
 /* ======== BASE ======== */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #FFEFD8;
-  color: #3b241f;
+main.conteudo {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100vh; /* Ocupa a altura da tela */
 }
 
-img {
-  max-width: 100%;
-  display: block;
+main.conteudo > section {
+  flex-shrink: 0;
 }
+
+main.conteudo > .footer {
+  margin-top: auto;
+}
+
+
 
 a {
   text-decoration: none;
-}
-
-main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-/* ======== HEADER ======== */
-.topo {
-  background: linear-gradient(to left, #F7941D, #FFCC80);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 20px;
-  color: #000;
-}
-
-.saudacao h1 {
-  font-size: 20px;
-  margin: 0;
-}
-
-.perfil .icone-perfil {
-  font-size: 24px;
 }
 
 /* ======== BOAS-VINDAS ======== */
@@ -133,41 +111,6 @@ main {
   background-color: #e67e00;
 }
 
-/* ======== FOOTER ======== */
-.footer {
-  background: linear-gradient(to left, #F7941D, #FFCC80);
-  color: white;
-  padding: 16px 12px;
-  text-align: center;
-  margin-top: auto;
-}
-
-.footer-container p {
-  margin: 0 0 8px 0;
-  font-size: 14px;
-}
-
-.footer-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-
-.footer-links a {
-  color: white;
-  font-weight: bold;
-  font-size: 14px;
-  text-decoration: none;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
-}
-
 /* ======== RESPONSIVO MOBILE FIRST ======== */
 @media (min-width: 600px) {
   .boas-vindas {
@@ -187,6 +130,9 @@ main {
 }
 
 @media (min-width: 768px) {
+
+    
+
   .boas-vindas .texto h2 {
     font-size: 28px;
   }

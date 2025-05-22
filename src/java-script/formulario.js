@@ -1,6 +1,7 @@
 // ------------------ INICIALIZAÇÃO --------------------
 const form = document.getElementById("form-pre-atendimento"); // Seleciona o formulário
 const botaoEnviar = document.getElementById("botao-enviar");   // Seleciona o botão ENVIAR
+  const botaoCancelar = document.getElementById("botao-cancelar"); // Seleciona o botão CANCELAR
 const inputs = form.querySelectorAll("input[required]");       // Seleciona todos os inputs obrigatórios
 const cpfInput = document.getElementById("cpf");               // Seleciona o campo de CPF
 const telInput = document.getElementById("telefone");          // Seleciona o campo de telefone
@@ -61,15 +62,22 @@ form.addEventListener("input", () => {
   });
 
   // Valida CPF em tempo real com valor já sem pontos e traços
-  const cpfValido = validarCPF(cpfInput.value.replace(/\D/g, ""));
-  if (cpfValido) {
-    cpfInput.classList.add("valid");
-    cpfInput.classList.remove("invalid");
-  } else {
-    cpfInput.classList.add("invalid");
-    cpfInput.classList.remove("valid");
-    valido = false;
-  }
+const cpfValido = validarCPF(cpfInput.value.replace(/\D/g, ""));
+const iconeCpf = document.getElementById("icone-cpf");
+
+if (cpfValido) {
+  cpfInput.classList.add("valid");
+  cpfInput.classList.remove("invalid");
+  iconeCpf.textContent = "✅";
+  iconeCpf.style.color = "green";
+} else {
+  cpfInput.classList.add("invalid");
+  cpfInput.classList.remove("valid");
+  iconeCpf.textContent = "❌";
+  iconeCpf.style.color = "red";
+  valido = false;
+}
+
 
   // Ativa ou desativa o botão com base na validade
   botaoEnviar.disabled = !valido;
@@ -109,4 +117,8 @@ form.addEventListener("submit", function (e) {
 
   localStorage.setItem("nomeUsuario", nome); // Armazena o nome para usar depois
   window.location.href = "../paginaAuxilio/cadastro.html";       // Redireciona para página de confirmação
+});
+
+  botaoCancelar.addEventListener("click", () => {
+  window.location.href = "../../index.html"; // ajuste o caminho conforme sua estrutura
 });

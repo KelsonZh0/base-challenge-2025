@@ -4,12 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atendimento</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="../CSS/reset.css">
     <link rel="stylesheet" href="../CSS/style_html/formualario.css">
+    <title>Atendimento</title>
 
-        <script defer src="../java-script/bot.js"></script>
-        <script defer src="../java-script/formulario.js"></script>
+    <script defer src="../java-script/bot.js"></script>
+    <script defer src="../java-script/formulario.js"></script>
 </head>
 
 <body>
@@ -27,7 +32,12 @@
             <input type="text" id="nome" name="nome" maxlength="100" placeholder="Digite seu nome ">
 
             <label for="cpf">CPF: *</label>
-            <input type="text" id="cpf" name="cpf" required placeholder="000.000.000-00">
+            <div class="campo-validacao">
+                <input type="text" id="cpf" name="cpf" required placeholder="000.000.000-00">
+                <span id="icone-cpf" class="icone-validacao">❌</span>
+            </div>
+
+
 
             <label for="data-nascimento">Data de nascimento: *</label>
             <input type="date" id="data-nascimento" name="data-nascimento" required>
@@ -91,6 +101,7 @@
 
             <button type="submit" id="botao-enviar" disabled>ENVIAR</button>
         </form>
+        <button type="button" id="botao-cancelar" class="cancelar">CANCELAR</button>
         <div id="mensagem-erro"></div>
     </main>
 
