@@ -134,15 +134,4 @@
   font-size: 20px;
 }
 
-button.cancelar {
-  background-color: #cccccc;
-  color: #333;
-  margin-top: 10px;
-  transition: background 0.3s;
-}
-
-button.cancelar:hover {
-  background-color: #999999;
-}
-
 

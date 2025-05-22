@@ -47,10 +47,8 @@ main {
 
 .faq h3:hover {
   background-color: #FFCC80;
-  transform: scale(1.12);
-  /* Crescimento suave no hover */
-  transform-origin: center;
-  /* Mantém crescimento simétrico */
+  font-size: 19px;
+
 }
 
 .faq h3 {
